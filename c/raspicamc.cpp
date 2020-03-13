@@ -38,4 +38,5 @@ void RPC_retrieve(RPCam cam, Mat img){
 
 void RPC_Release(RPCam cam){
     cam->release();
+    delete cam;
 }
