@@ -5,7 +5,7 @@
 - raspicam is faster than built-in video capturing interface of opencv when you use rp official camera.
 
 ## How to use
-- compile c interface using cmake and provide required linkages for your test app
+- compile c/c++ interface using cmake and provide required linkages for your test app
 ```d
 import opencvd;
 import raspicamcvd;
@@ -35,7 +35,7 @@ void main(){
         
         if (waitKey(10) == 27) break;
     }
-    
+
     Destroy(image);
     camera.release();
 }
