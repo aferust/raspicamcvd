@@ -32,16 +32,7 @@ bool RPC_grab(RPCam cam){
     return cam->grab();
 }
 
-void RPC_retrieve(RPCam cam, int* rows, int* cols, int* type, void* data){
-    cv::Mat image;
-    cam->retrieve(image);
-    *rows = image.rows;
-    *cols = image.cols;
-    *type = image.type();
-    data = image.data;
-}
-
-void RPC_retrieve2(RPCam cam, Mat img){
+void RPC_retrieve(RPCam cam, Mat img){
     cam->retrieve(*img);
 }
 

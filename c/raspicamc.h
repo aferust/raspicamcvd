@@ -22,8 +22,7 @@ double RPC_CameraGet(RPCam cam, int prop);
 bool RPC_Open(RPCam cam);
 bool RPC_IsOpened(RPCam cam);
 bool RPC_grab(RPCam cam);
-void RPC_retrieve(RPCam cam, int* rows, int* cols, int* type, void* data);
-void RPC_retrieve2(RPCam cam, Mat img);
+void RPC_retrieve(RPCam cam, Mat img);
 void RPC_Release(RPCam cam);
 
 #ifdef __cplusplus
